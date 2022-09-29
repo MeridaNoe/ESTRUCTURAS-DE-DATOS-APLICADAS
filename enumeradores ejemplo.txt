@@ -1,0 +1,25 @@
+public enum Color{
+        RED,GREEN,BLUE
+    }
+    public static void repasoEnumeradores(){
+        Scanner sc = new Scanner (System.in);
+        /*Es una estructura de datos, y es estatica*/
+        /*EL VALOR ESTA DEFINIDO EN EL CODIGO*/
+        Color color  = Color.RED;
+        String valor = sc.nextLine();
+        color=Color.valueOf(valor.toUpperCase());
+        System.out.println("");
+        switch (color) {
+            case RED:
+                System.out.println("red");
+                break;
+                case GREEN:
+                System.out.println("green");
+                break;
+                case BLUE:
+                System.out.println("blue");
+                break;
+            default:
+                 System.err.println("Error");
+        }
+    }
